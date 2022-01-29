@@ -5,7 +5,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.time.LocalDate;
 
 public record UpdateTaskResponse(
-        String uuid,
+        Long uuid,
         @DateTimeFormat(pattern = "yyyyMMdd") LocalDate date,
         Integer period,
         String message) {

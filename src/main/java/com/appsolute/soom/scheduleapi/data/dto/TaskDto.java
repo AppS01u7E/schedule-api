@@ -6,9 +6,10 @@ import com.appsolute.soom.scheduleapi.data.type.PeriodType;
 import java.time.LocalDate;
 
 public record TaskDto(
-        String UUID,
-        String scheduleUUID,
+        Long UUID,
+        Long scheduleUUID,
         LocalDate date,
         PeriodType period,
         String message
-) {}
+) {
+}
