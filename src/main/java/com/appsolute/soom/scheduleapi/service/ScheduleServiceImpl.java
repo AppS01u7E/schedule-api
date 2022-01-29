@@ -7,14 +7,11 @@ import com.appsolute.soom.scheduleapi.repository.ScheduleRepository;
 import com.appsolute.soom.scheduleapi.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 import static com.appsolute.soom.scheduleapi.util.DateUtil.*;
